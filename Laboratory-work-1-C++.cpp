@@ -121,7 +121,7 @@ void BaseTask()
 		cin.clear();
 	}
 
-	a = a / N;
+	a = a / (N - 1);
 
 	cout << endl;
 
@@ -129,7 +129,7 @@ void BaseTask()
 	{
 		if (a < group[i].Price)
 		{
-			cout << "Товар №" << i << ":" << endl;
+			cout << "\nТовар №" << i << ":" << endl;
 
 			cout << "\nНаименование: " << group[i].Name << endl;
 			cout << "Количество: " << group[i].Number << endl;
@@ -194,7 +194,7 @@ void MediumTask()
 	{
 		if ((car[i].Mark == "Ford") && (car[i].Registration.year < 2000))
 		{
-			cout << "Автомобиль №" << i << ":" << endl;
+			cout << "\nАвтомобиль №" << i << ":" << endl;
 
 			cout << "\nМарка автомобиля: " << car[i].Mark << endl;
 			cout << "Производитель: " << car[i].Manufacturer << endl;
